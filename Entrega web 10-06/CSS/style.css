@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+h1, h2 {
+    color: #0056b3;
+}
+#event-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+#event-form div {
+    margin-bottom: 15px;
+}
+#event-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#event-form input[type="text"],
+#event-form input[type="datetime-local"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#adicionar-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#adicionar-btn:hover {
+    background-color: #218838;
+}
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+#task-list li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column; /* Para empilhar o texto e os botões */
+    gap: 10px;
+}
+#task-list li strong {
+    color: #0056b3;
+}
+.buttons-container {
+    align-self: flex-end; /* Alinha os botões à direita dentro do item da lista */
+    display: flex;
+    gap: 5px;
+}
+#task-list li button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#task-list li button:hover {
+    background-color: #0056b3;
+}
+#task-list li button:last-child { /* Estilo específico para o botão de remover */
+    background-color: #dc3545;
+}
+#task-list li button:last-child:hover {
+    background-color: #c82333;
+}
